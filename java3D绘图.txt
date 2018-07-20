@@ -1,0 +1,8 @@
+我尝试做一个总结并展示一种简单有效的方法来创建图（2d和3d）
+
+JFreeChart是一个很棒的工具，但没有3D图表。
+jzy3d可以创建真正惊人的3D图表，但是你需要第三方库，特别是原生平台相关的库，因为它使用JOGL。我有一个带雪豹的Mac（64位），还有一些可怕的问题（我无法解决）。我认为SWT + 64位Mac OS X是个问题。
+JMathTools是一个比其他工具更小的工具，但是大数据集的性能很差。
+Surface Plotter是一个非常好的工具，有很多3d选项，它不使用JOGL或类似的东西。
+
+在My Alternative中，我使用了一个基于Gnuplot的友好，用户友好的Java API（JavaPlot）。在github的示例中，我将一个鼠标移动侦听器添加到JPanel，以交互旋转三维图表。当您拥有Gnuplot经验时，您可以在任何Java应用程序中使用Gnuplot的强大功能。
